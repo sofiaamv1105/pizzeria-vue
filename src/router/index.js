@@ -3,6 +3,9 @@ import HomeView from '../views/HomeView.vue'
 import NewPizza from '../components/Pizza/NewPizza.vue'
 import EditPizza from '../components/Pizza/EditPizza.vue'
 import PizzaList from '@/views/PizzaList.vue'
+import NewUser from '../components/User/NewUser.vue'
+import EditUser from '../components/User/EditUser.vue'
+import UserList from '@/views/UserList.vue'
 
 const routes = [
   {
@@ -24,6 +27,21 @@ const routes = [
     path: '/add-pizza/',
     name: 'NewPizza',
     component: NewPizza
+  },
+  {
+    path: '/users',
+    name: 'UserList',
+    component: UserList
+  },
+  {
+    path: '/editar-user/:id',
+    name: 'EditUser',
+    component: EditUser
+  },
+  {
+    path: '/add-user/',
+    name: 'NewUser',
+    component: NewUser
   },
 ]
 
