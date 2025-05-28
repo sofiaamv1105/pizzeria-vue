@@ -47,6 +47,11 @@ import PizzaIngredientList from '@/views/PizzaIngredientList.vue'
 import NewPizzaIngredient from '../components/PizzaIngredient/NewPizzaIngredient.vue'
 import EditPizzaIngredient from '../components/PizzaIngredient/EditPizzaIngredient.vue'
 
+//imports ExtraIngredient
+import ExtraIngredientList from '@/views/ExtraIngredientList.vue'
+import NewExtraIngredient from '../components/ExtraIngredient/NewExtraIngredient.vue'
+import EditExtraIngredient from '../components/ExtraIngredient/EditExtraIngredient.vue'
+
 const routes = [
   {
     path: '/',
@@ -187,6 +192,21 @@ const routes = [
     path: '/add_pizza_ingredient/',
     name: 'NewPizzaIngredient',
     component: NewPizzaIngredient
+  },
+  {
+    path: '/extra-ingredients',
+    name: 'ExtraIngredientList',
+    component: ExtraIngredientList
+  },
+  {
+    path: '/editar-extra-ingredient/:id',
+    name: 'EditExtraIngredient',
+    component: EditExtraIngredient
+  },
+  {
+    path: '/add-extra-ingredient/',
+    name: 'NewExtraIngredient',
+    component: NewExtraIngredient
   },
 ]
 
