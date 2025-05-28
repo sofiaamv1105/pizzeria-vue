@@ -32,6 +32,11 @@ import EmployeeList from '@/views/EmployeeList.vue'
 import NewEmployee from '../components/Employee/NewEmployee.vue'
 import EditEmployee from '../components/Employee/EditEmployee.vue'
 
+//imports Ingredient
+import IngredientList from '@/views/IngredientList.vue'
+import NewIngredient from '../components/Ingredient/NewIngredient.vue'
+import EditIngredient from '../components/Ingredient/EditIngredient.vue'
+
 const routes = [
   {
     path: '/',
@@ -127,6 +132,21 @@ const routes = [
     path: '/add-employee/',
     name: 'NewEmployee',
     component: NewEmployee
+  },
+  {
+    path: '/ingredients',
+    name: 'IngredientList',
+    component: IngredientList
+  },
+  {
+    path: '/editar-ingredient/:id',
+    name: 'EditIngredient',
+    component: EditIngredient
+  },
+  {
+    path: '/add-ingredient/',
+    name: 'NewIngredient',
+    component: NewIngredient
   },
 ]
 
