@@ -27,6 +27,11 @@ import BranchList from '@/views/BranchList.vue'
 import NewBranch from '../components/Branch/NewBranch.vue'
 import EditBranch from '@/components/Branch/EditBranch.vue'
 
+//import Employee
+import EmployeeList from '@/views/EmployeeList.vue'
+import NewEmployee from '../components/Employee/NewEmployee.vue'
+import EditEmployee from '../components/Employee/EditEmployee.vue'
+
 const routes = [
   {
     path: '/',
@@ -107,6 +112,21 @@ const routes = [
     path: '/add-branch/',
     name: 'NewBranch',
     component: NewBranch
+  },
+  {
+    path: '/employees',
+    name: 'EmployeeList',
+    component: EmployeeList
+  },
+  {
+    path: '/editar-employee/:id',
+    name: 'EditEmployee',
+    component: EditEmployee
+  },
+  {
+    path: '/add-employee/',
+    name: 'NewEmployee',
+    component: NewEmployee
   },
 ]
 
