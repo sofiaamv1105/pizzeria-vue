@@ -1,17 +1,31 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
+
 import HomeView from '../views/HomeView.vue'
+
+//imports Pizza
 import NewPizza from '../components/Pizza/NewPizza.vue'
 import EditPizza from '../components/Pizza/EditPizza.vue'
 import PizzaList from '@/views/PizzaList.vue'
+
+//imports User
 import NewUser from '../components/User/NewUser.vue'
 import EditUser from '../components/User/EditUser.vue'
 import UserList from '@/views/UserList.vue'
+
+//imports PizzaSize
 import PizzaSizeList from '@/views/PizzaSizeList.vue'
 import NewPizzaSize from '../components/PizzaSize/NewPizzaSize.vue'
 import EditPizzaSize from '../components/PizzaSize/EditPizzaSize.vue'
+
+//imports Client
 import ClientList from '@/views/ClientList.vue'
 import NewClient from '../components/Client/NewClient.vue'
 import EditClient from '../components/Client/EditClient.vue'
+
+//imports Branches
+import BranchList from '@/views/BranchList.vue'
+import NewBranch from '../components/Branch/NewBranch.vue'
+import EditBranch from '@/components/Branch/EditBranch.vue'
 
 const routes = [
   {
@@ -78,6 +92,21 @@ const routes = [
     path: '/add-client/',
     name: 'NewClient',
     component: NewClient
+  },
+  {
+    path: '/branches',
+    name: 'BranchList',
+    component: BranchList
+  },
+  {
+    path: '/editar-branch/:id',
+    name: 'EditBranch',
+    component: EditBranch
+  },
+  {
+    path: '/add-branch/',
+    name: 'NewBranch',
+    component: NewBranch
   },
 ]
 
