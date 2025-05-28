@@ -37,6 +37,11 @@ import IngredientList from '@/views/IngredientList.vue'
 import NewIngredient from '../components/Ingredient/NewIngredient.vue'
 import EditIngredient from '../components/Ingredient/EditIngredient.vue'
 
+//imports Order
+import OrderList from '@/views/OrderList.vue'
+import NewOrder from '../components/Order/NewOrder.vue'
+import EditOrder from '../components/Order/EditOrder.vue'
+
 const routes = [
   {
     path: '/',
@@ -147,6 +152,21 @@ const routes = [
     path: '/add-ingredient/',
     name: 'NewIngredient',
     component: NewIngredient
+  },
+  {
+    path: '/orders',
+    name: 'OrderList',
+    component: OrderList
+  },
+  {
+    path: '/editar-order/:id',
+    name: 'EditOrder',
+    component: EditOrder
+  },
+  {
+    path: '/add-order/',
+    name: 'NewOrder',
+    component: NewOrder
   },
 ]
 
