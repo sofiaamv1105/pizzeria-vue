@@ -50,7 +50,7 @@ const isActive = (path) => route.path.startsWith(path)
 const adminLinks = [
   { path: '/users', label: 'Usuarios' },
   { path: '/pizzas', label: 'Pizzas' },
-  { path: '/pizza_sizes', label: 'Tamaños de Pizza' },
+  { path: '/pizza-sizes', label: 'Tamaños de Pizza' },
   { path: '/clients', label: 'Clientes' },
   { path: '/branches', label: 'Sucursales' },
   { path: '/employees', label: 'Empleados' },

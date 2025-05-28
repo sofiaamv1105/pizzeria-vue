@@ -6,6 +6,9 @@ import PizzaList from '@/views/PizzaList.vue'
 import NewUser from '../components/User/NewUser.vue'
 import EditUser from '../components/User/EditUser.vue'
 import UserList from '@/views/UserList.vue'
+import PizzaSizeList from '@/views/PizzaSizeList.vue'
+import NewPizzaSize from '../components/PizzaSize/NewPizzaSize.vue'
+import EditPizzaSize from '../components/PizzaSize/EditPizzaSize.vue'
 
 const routes = [
   {
@@ -42,6 +45,21 @@ const routes = [
     path: '/add-user/',
     name: 'NewUser',
     component: NewUser
+  },
+  {
+    path: '/pizza-sizes',
+    name: 'PizzaSizeList',
+    component: PizzaSizeList  
+  },
+  {
+    path: '/editar-pizza-size/:id',
+    name: 'EditPizzaSize',
+    component: EditPizzaSize
+  },
+  {
+    path: '/add-pizza-size/',
+    name: 'NewPizzaSize',
+    component: NewPizzaSize
   },
 ]
 
