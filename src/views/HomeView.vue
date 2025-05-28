@@ -3,13 +3,6 @@
     <div class="pizza-menu">
       <div class="menu-header">🍕 Menú Principal 🍕</div>
 
-      <router-link
-        to="/dashboard"
-        :class="{ active: isActive('/dashboard') }"
-      >
-        Dashboard
-      </router-link>
-
       <!-- Enlaces para Admin -->
       <template v-if="role === 'admin'">
         <router-link v-for="item in adminLinks"

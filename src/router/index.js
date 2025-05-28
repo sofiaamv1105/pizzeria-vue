@@ -1,5 +1,8 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
+import NewPizza from '../components/Pizza/NewPizza.vue'
+import EditPizza from '../components/Pizza/EditPizza.vue'
+import PizzaList from '@/views/PizzaList.vue'
 
 const routes = [
   {
@@ -9,9 +12,19 @@ const routes = [
   },
   {
     path: '/pizzas',
-    name: 'Pizzas',
-    component: Pizzas
-  }
+    name: 'PizzaList',
+    component: PizzaList
+  },
+  {
+    path: '/editar-pizza/:id',
+    name: 'EditPizza',
+    component: EditPizza
+  },
+  {
+    path: '/add-pizza/',
+    name: 'NewPizza',
+    component: NewPizza
+  },
 ]
 
 const router = createRouter({
