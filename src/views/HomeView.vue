@@ -57,12 +57,12 @@ const adminLinks = [
   { path: '/orders', label: 'Pedidos' },
   { path: '/ingredients', label: 'Ingredientes' },
   { path: '/pizza_ingredients', label: 'Ingredientes de Pizza' },
-  { path: '/extra_ingredients', label: 'Ingredientes Extra de Pizza' },
-  { path: '/order_extra_ingredients', label: 'Ingredientes Extra de Pizza para Pedidos' },
-  { path: '/order_pizzas', label: 'Pedidos de Pizza' },
-  { path: '/raw_materials', label: 'Materia Prima' },
+  { path: '/extra-ingredients', label: 'Ingredientes Extra de Pizza' },
+  { path: '/order-extra-ingredisents', label: 'Ingredientes Extra de Pizza para Pedidos' },
+  { path: '/order-pizzas', label: 'Pedidos de Pizza' },
+  { path: '/raw-materials', label: 'Materia Prima' },
   { path: '/suppliers', label: 'Proveedores' },
-  { path: '/pizza_raw_materials', label: 'Materia Prima de Pizzas' },
+  { path: '/pizza-raw-materials', label: 'Materia Prima de Pizzas' },
   { path: '/purchases', label: 'Compras' },
 ]
 
