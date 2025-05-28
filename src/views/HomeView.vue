@@ -59,7 +59,7 @@ const adminLinks = [
   { path: '/pizza_ingredients', label: 'Ingredientes de Pizza' },
   { path: '/extra-ingredients', label: 'Ingredientes Extra de Pizza' },
   { path: '/order-extra-ingredisents', label: 'Ingredientes Extra de Pizza para Pedidos' },
-  { path: '/order-pizzas', label: 'Pedidos de Pizza' },
+  { path: '/order-pizza', label: 'Pedidos de Pizza' },
   { path: '/raw-materials', label: 'Materia Prima' },
   { path: '/suppliers', label: 'Proveedores' },
   { path: '/pizza-raw-materials', label: 'Materia Prima de Pizzas' },
