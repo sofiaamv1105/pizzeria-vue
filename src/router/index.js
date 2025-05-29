@@ -77,6 +77,12 @@ import PizzaRawMaterialList from '@/views/PizzaRawMaterialList.vue'
 import NewPizzaRawMaterial from '../components/PizzaRawMaterial/NewPizzaRawMaterial.vue'
 import EditPizzaRawMaterial from '../components/PizzaRawMaterial/EditPizzaRawMaterial.vue'
 
+//imports Purchase
+import PurchaseList from '@/views/PurchaseList.vue'
+import NewPurchase from '../components/Purchase/NewPurchase.vue'
+import EditPurchase from '../components/Purchase/EditPurchase.vue'
+
+
 const routes = [
   {
     path: '/',
@@ -116,7 +122,7 @@ const routes = [
   {
     path: '/pizza-sizes',
     name: 'PizzaSizeList',
-    component: PizzaSizeList  
+    component: PizzaSizeList
   },
   {
     path: '/editar-pizza-size/:id',
@@ -294,21 +300,35 @@ const routes = [
     component: NewSupplier
   },
   {
-  path: '/pizza-raw-materials',
-  name: 'PizzaRawMaterialList',
-  component: PizzaRawMaterialList
-},
-{
-  path: '/add-pizza-raw-material',
-  name: 'NewPizzaRawMaterial',
-  component: NewPizzaRawMaterial
-},
-{
-  path: '/editar-pizza-raw-material/:id',
-  name: 'EditPizzaRawMaterial',
-  component: EditPizzaRawMaterial
-},
-  
+    path: '/pizza-raw-materials',
+    name: 'PizzaRawMaterialList',
+    component: PizzaRawMaterialList
+  },
+  {
+    path: '/add-pizza-raw-material',
+    name: 'NewPizzaRawMaterial',
+    component: NewPizzaRawMaterial
+  },
+  {
+    path: '/editar-pizza-raw-material/:id',
+    name: 'EditPizzaRawMaterial',
+    component: EditPizzaRawMaterial
+  },
+  {
+    path: '/purchases',
+    name: 'PurchaseList',
+    component: PurchaseList
+  },
+  {
+    path: '/editar-purchase/:id',
+    name: 'EditPurchase',
+    component: EditPurchase
+  },
+  {
+    path: '/add-purchase/',
+    name: 'NewPurchase',
+    component: NewPurchase
+  }
 ]
 
 const router = createRouter({
