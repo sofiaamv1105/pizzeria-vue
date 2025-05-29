@@ -62,6 +62,11 @@ import OrderExtraIngredientList from '@/views/OrderExtraIngredientList.vue'
 import NewOrderExtraIngredient from '../components/OrderExtraIngredient/NewOrderExtraIngredient.vue'
 import EditOrderExtraIngredient from '../components/OrderExtraIngredient/EditOrderExtraIngredient.vue'
 
+//imports RawMaterial
+import RawMaterialList from '@/views/RawMaterialList.vue'
+import NewRawMaterial from '../components/RawMaterial/NewRawMaterial.vue'
+import EditRawMaterial from '../components/RawMaterial/EditRawMaterial.vue'
+
 
 const routes = [
   {
@@ -248,6 +253,21 @@ const routes = [
     path: '/add-order-extra-ingredient/',
     name: 'NewOrderExtraIngredient',
     component: NewOrderExtraIngredient
+  },
+  {
+    path: '/raw-materials',
+    name: 'RawMaterialList',
+    component: RawMaterialList
+  },
+  {
+    path: '/editar-raw-material/:id',
+    name: 'EditRawMaterial',
+    component: EditRawMaterial
+  },
+  {
+    path: '/add-raw-material/',
+    name: 'NewRawMaterial',
+    component: NewRawMaterial
   },
 ]
 
