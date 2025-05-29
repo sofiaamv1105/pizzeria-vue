@@ -72,6 +72,11 @@ import SupplierList from '@/views/SupplierList.vue'
 import NewSupplier from '../components/Supplier/NewSupplier.vue'
 import EditSupplier from '../components/Supplier/EditSupplier.vue'
 
+//imports PizzaRawMaterial
+import PizzaRawMaterialList from '@/views/PizzaRawMaterialList.vue'
+import NewPizzaRawMaterial from '../components/PizzaRawMaterial/NewPizzaRawMaterial.vue'
+import EditPizzaRawMaterial from '../components/PizzaRawMaterial/EditPizzaRawMaterial.vue'
+
 const routes = [
   {
     path: '/',
@@ -288,6 +293,21 @@ const routes = [
     name: 'NewSupplier',
     component: NewSupplier
   },
+  {
+  path: '/pizza-raw-materials',
+  name: 'PizzaRawMaterialList',
+  component: PizzaRawMaterialList
+},
+{
+  path: '/add-pizza-raw-material',
+  name: 'NewPizzaRawMaterial',
+  component: NewPizzaRawMaterial
+},
+{
+  path: '/editar-pizza-raw-material/:id',
+  name: 'EditPizzaRawMaterial',
+  component: EditPizzaRawMaterial
+},
   
 ]
 
