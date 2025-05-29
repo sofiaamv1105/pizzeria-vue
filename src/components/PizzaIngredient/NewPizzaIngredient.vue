@@ -26,7 +26,7 @@
           </div>
 
           <button type="submit" class="btn btn-primary">Guardar</button>
-          <router-link to="/pizza-ingredients" class="btn btn-secondary mx-2">Cancelar</router-link>
+          <router-link to="/pizza_ingredients" class="btn btn-secondary mx-2">Cancelar</router-link>
         </form>
       </div>
     </div>
