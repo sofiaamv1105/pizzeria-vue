@@ -67,6 +67,10 @@ import RawMaterialList from '@/views/RawMaterialList.vue'
 import NewRawMaterial from '../components/RawMaterial/NewRawMaterial.vue'
 import EditRawMaterial from '../components/RawMaterial/EditRawMaterial.vue'
 
+//imports Supplier
+import SupplierList from '@/views/SupplierList.vue'
+import NewSupplier from '../components/Supplier/NewSupplier.vue'
+import EditSupplier from '../components/Supplier/EditSupplier.vue'
 
 const routes = [
   {
@@ -269,6 +273,22 @@ const routes = [
     name: 'NewRawMaterial',
     component: NewRawMaterial
   },
+  {
+    path: '/suppliers',
+    name: 'SupplierList',
+    component: SupplierList
+  },
+  {
+    path: '/editar-supplier/:id',
+    name: 'EditSupplier',
+    component: EditSupplier
+  },
+  {
+    path: '/add-supplier/',
+    name: 'NewSupplier',
+    component: NewSupplier
+  },
+  
 ]
 
 const router = createRouter({
